@@ -1,0 +1,29 @@
+{
+  "nombre": "B-real",
+  "descripcion": "Modelo real. B: plantilla completa. Sustituye REEMPLAZAR por tu proveedor e ID exacto.",
+  "pi_args": [
+    "--no-session",
+    "-ne",
+    "-ns",
+    "-np",
+    "-nc",
+    "--provider",
+    "REEMPLAZAR",
+    "--model",
+    "REEMPLAZAR",
+    "-e",
+    "ejemplos/pi-package/extensions/catalogue.ts",
+    "-e",
+    "ejemplos/pi-package/extensions/presupuesto.ts",
+    "--max-llamadas",
+    "6",
+    "--max-turnos",
+    "8",
+    "--tools",
+    "lookup_document",
+    "--prompt-template",
+    "ejemplos/pi-package/prompts/respuesta-documental.md"
+  ],
+  "prompt": "/respuesta-documental {pregunta}",
+  "agente_aislado": false
+}

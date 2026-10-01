@@ -1,0 +1,32 @@
+{
+  "nombre": "B-guion",
+  "descripcion": "Modelo de guion (simulado). B: plantilla completa con obligación de consultar, vigencia y bloqueo.",
+  "pi_args": [
+    "--no-session",
+    "--offline",
+    "-ne",
+    "-ns",
+    "-np",
+    "-nc",
+    "-e",
+    "ejemplos/pi-package/dobles/modelo-guion.ts",
+    "--provider",
+    "curso",
+    "--model",
+    "guion",
+    "-e",
+    "ejemplos/pi-package/extensions/catalogue.ts",
+    "-e",
+    "ejemplos/pi-package/extensions/presupuesto.ts",
+    "--max-llamadas",
+    "6",
+    "--max-turnos",
+    "8",
+    "--tools",
+    "lookup_document",
+    "--prompt-template",
+    "ejemplos/pi-package/prompts/respuesta-documental.md"
+  ],
+  "prompt": "/respuesta-documental {pregunta}",
+  "agente_aislado": true
+}

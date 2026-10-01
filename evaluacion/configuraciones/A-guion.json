@@ -1,0 +1,32 @@
+{
+  "nombre": "A-guion",
+  "descripcion": "Modelo de guion (simulado). A: solo contrato JSON, sin obligación de consultar ni regla de vigencia.",
+  "pi_args": [
+    "--no-session",
+    "--offline",
+    "-ne",
+    "-ns",
+    "-np",
+    "-nc",
+    "-e",
+    "ejemplos/pi-package/dobles/modelo-guion.ts",
+    "--provider",
+    "curso",
+    "--model",
+    "guion",
+    "-e",
+    "ejemplos/pi-package/extensions/catalogue.ts",
+    "-e",
+    "ejemplos/pi-package/extensions/presupuesto.ts",
+    "--max-llamadas",
+    "6",
+    "--max-turnos",
+    "8",
+    "--tools",
+    "lookup_document",
+    "--append-system-prompt",
+    "evaluacion/configuraciones/contrato-minimo.md"
+  ],
+  "prompt": "{pregunta}",
+  "agente_aislado": true
+}
